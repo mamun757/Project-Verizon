@@ -14,7 +14,7 @@ public class SignIn {
     private static final By PasswordField = By.id("IDToken2");
     private static final By SignIn_Button = By.id("login-submit");
     private static final By ForGotAnswer = By.xpath("//*[@id='challengequestion']//a[text()='Forgot your answer?']");
-    private static final By ShoppingCart = By.xpath("//*[@id='vz-gh20']/div/div[1]/div/div[1]/div[2]/div/div[1]/div[2]/div[3]/div[4]/div/button[@aria-label='Shopping Cart Menu']");
+    private static final By ShoppingCart = By.xpath("//*[@id='gnav20-search-icon'][@aria-label='Search Verizon']");
 
     private static final Logger LOGGER = LogManager.getLogger(SignIn.class);
     WebDriver driver;
@@ -62,7 +62,7 @@ public class SignIn {
     public SignIn ValidatingLogInIsSuccessful(){
        boolean AddIsDisplayed = driver.findElement(ShoppingCart).isDisplayed();
         LOGGER.debug("validating login is successful with valid credentials");
-        Assert.assertTrue("Actual error is displayed", AddIsDisplayed);
+        Assert.assertTrue("Shopping cart is not displayed", AddIsDisplayed);
         return this;
     }
 }
