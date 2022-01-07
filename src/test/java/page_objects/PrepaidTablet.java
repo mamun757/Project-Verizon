@@ -12,7 +12,7 @@ public class PrepaidTablet {
     private static final By Devices = By.xpath("//a[@id='Shop-L3-64']");
     private static final By TabletsTab = By.xpath("//a[@id='gnav20-Shop-L4-38'][@aria-label='Tablets']");
     private static final By SearchBox = By.xpath("//select[@id='sortOptions'][@name='sorting']");
-    private static final By QuickView = By.xpath("//*[@id='tile_dev16160079']//button[2][text()='Quick view']");
+    private static final By QuickView = By.xpath("//*[@id='tile_dev16160079']/div/div[1]/div[3]/button[2][@title='Samsung Galaxy Tab A7 Lite Prepaid']");
     private static final By TabletPrice = By.xpath("//*[@id='quick-view']//div[3][text()='$199.99']");
 
 
