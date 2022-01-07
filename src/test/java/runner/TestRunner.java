@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue ={"step_definitions"},
         plugin = {"pretty","summary","json:target/cucumber.json"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@internetAvailability_test"
+        tags = ""
 )
 
 public class TestRunner {
