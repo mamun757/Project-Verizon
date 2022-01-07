@@ -14,7 +14,7 @@ public class SignIn {
     private static final By PasswordField = By.id("IDToken2");
     private static final By SignIn_Button = By.id("login-submit");
     private static final By ForGotAnswer = By.xpath("//*[@id='challengequestion']//a[text()='Forgot your answer?']");
-    private static final By ShoppingCart = By.xpath("//*[@id='IDToken1'][@type='password']");
+    private static final By AccountTab = By.xpath("//*[@id='gnav20-Account-L1'][@class='gnav20-menu-label gnav20-menu-label-button gnav20-haschild']");
 
     private static final Logger LOGGER = LogManager.getLogger(SignIn.class);
     WebDriver driver;
@@ -60,9 +60,9 @@ public class SignIn {
     }
 
     public SignIn ValidatingLogInIsSuccessful(){
-       boolean AddIsDisplayed = driver.findElement(ShoppingCart).isDisplayed();
+       boolean AddIsDisplayed = driver.findElement(AccountTab).isDisplayed();
         LOGGER.debug("validating login is successful with valid credentials");
-        Assert.assertTrue("Shopping cart is not displayed", AddIsDisplayed);
+        Assert.assertTrue("Accoint Tab is not displayed", AddIsDisplayed);
         return this;
     }
 }
