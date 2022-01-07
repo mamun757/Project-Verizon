@@ -14,7 +14,7 @@ public class SignIn {
     private static final By PasswordField = By.id("IDToken2");
     private static final By SignIn_Button = By.id("login-submit");
     private static final By ForGotAnswer = By.xpath("//*[@id='challengequestion']//a[text()='Forgot your answer?']");
-    private static final By ShoppingCart = By.xpath("//*[@id='gnav20-search-icon'][@aria-label='Search Verizon']");
+    private static final By ShoppingCart = By.xpath("//*[@id='IDToken1'][@type='password']");
 
     private static final Logger LOGGER = LogManager.getLogger(SignIn.class);
     WebDriver driver;

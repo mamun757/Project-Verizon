@@ -12,8 +12,8 @@ public class PrepaidTablet {
     private static final By Devices = By.xpath("//a[@id='Shop-L3-64']");
     private static final By TabletsTab = By.xpath("//a[@id='gnav20-Shop-L4-38'][@aria-label='Tablets']");
     private static final By SearchBox = By.xpath("//select[@id='sortOptions'][@name='sorting']");
-    private static final By QuickView = By.xpath("//*[@id='tile_dev16160079']/div/div[1]/div[3]/button[2][@class='quick-buttons color_FFF NHaasDS75Bd background_00 fontSize_14']");
-    private static final By TabletPrice = By.xpath("//*[@id='quick-view']//div[3][text()='$199.99']");
+    private static final By QuickView = By.xpath("//*[@id='tile_dev14400026']/div/div[1]/div[3]/button[2][text()='Quick view']");
+    private static final By TabletPrice = By.xpath("//*[@id='quick-view']/div/div/div[1]/div[3]/div[1]/div[1]/a/span[2][text()='TAB FAMILY EDITION Prepaid']");
 
 
     private static final Logger LOGGER = LogManager.getLogger(PrepaidTablet.class);
