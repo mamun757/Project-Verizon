@@ -12,8 +12,8 @@ public class PrepaidTablet {
     private static final By Devices = By.xpath("//a[@id='Shop-L3-64']");
     private static final By TabletsTab = By.xpath("//a[@id='gnav20-Shop-L4-38'][@aria-label='Tablets']");
     private static final By SearchBox = By.xpath("//select[@id='sortOptions'][@name='sorting']");
-    private static final By QuickView = By.xpath("//*[@id='tile_dev14400026']/div/div[1]/div[3]/button[2][text()='Quick view']");
-    private static final By TabletPrice = By.xpath("//*[@id='quick-view']/div/div/div[1]/div[3]/div[1]/div[1]/a/span[2][text()='TAB FAMILY EDITION Prepaid']");
+    private static final By QuickView = By.xpath("//*[@id='tile_dev14400026']/div/div[1][@style='position: relative;']");
+    private static final By TabletPrice = By.xpath("//*[@id='payment option']/div/div/div/div[2][text()=' prepay Price']");
 
 
     private static final Logger LOGGER = LogManager.getLogger(PrepaidTablet.class);
@@ -51,6 +51,7 @@ public class PrepaidTablet {
         return this;
     }
     public PrepaidTablet ClickOnQuickView(){
+        ActOn.wait(driver,QuickView).waitForElementToBeVisible();
         ActOn.element(driver,QuickView).click();
         LOGGER.debug("Click on Quick view Tab");
         return this;
