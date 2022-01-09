@@ -14,7 +14,7 @@ Feature: TradeIn Functionalities
     Then the trade in value is "Your estimated trade-in value is $185.00."
 
     Examples:
-    |brand|model|storage|network|
+    |brand|model|storage|network |
     |Apple|iPhone 11|64GB|Sprint |
 
 
