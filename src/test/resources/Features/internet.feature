@@ -9,7 +9,6 @@ Feature: Internet Availability Functionalities
     And click on Internet Service button
     When click on Here button
     And set his living address "<address>" field
-
     Then user get an message
 
     Examples:
