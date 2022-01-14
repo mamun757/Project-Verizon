@@ -12,7 +12,7 @@ public class PrepaidTablet {
     private static final By Devices = By.xpath("//a[@id='Shop-L3-64']");
     private static final By TabletsTab = By.xpath("//a[@id='gnav20-Shop-L4-38'][@aria-label='Tablets']");
     private static final By SearchBox = By.xpath("//select[@id='sortOptions'][@name='sorting']");
-    private static final By QuickView = By.xpath("//*[@id='tile_dev14400026']/div/div[1][@style='position: relative;']");
+    private static final By QuickView = By.xpath("//*[@id='tile_dev16160079']/div/div[1][@style='position: relative;']");
     private static final By TabletPrice = By.xpath("//*[@id='payment option']/div/div/div/div[2][text()=' prepay Price']");
 
 
